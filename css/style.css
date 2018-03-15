@@ -963,7 +963,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		color: #ffffff;
-		padding: 16em 0em 14em;
+		padding: 4em 0em 4em;
 		text-align: center;
 	}
 
@@ -1041,7 +1041,7 @@
 	#footer {
 		background: #202222;
 		color: #888;
-		padding: 6em 0em 4em;
+		padding: 1em 0em 1em;
 	}
 
 		#footer h2, #footer h3, #footer h4 {
@@ -1072,7 +1072,7 @@
 
 		#footer .copyright {
 			font-size: 0.9em;
-			margin: 2em 0 0 0;
+			margin: 0 0 0 0;
 			padding: 0;
 			text-align: center;
 		}
