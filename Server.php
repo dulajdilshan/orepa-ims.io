@@ -96,7 +96,7 @@ if (isset($_POST['login_user'])) {
 if (isset($_POST['search'])) {
 
     // receive all input values from the form
-
+    $name = mysqli_real_escape_string($conn, $_POST['name']);
     $university = mysqli_real_escape_string($conn, $_POST['university']);
     $batch = mysqli_real_escape_string($conn, $_POST['batch']);
     $field = mysqli_real_escape_string($conn, $_POST['field']);
@@ -112,6 +112,7 @@ if (isset($_POST['search'])) {
     if (!empty($field))          {$query .= " and Field like '%$field%'";}
     if (!empty($batch_royal))    {$query .= " and Batch_Royal_College=$batch_royal";}
     if (!empty($company))        {$query .= " and Company like '%$company%'";}
+    if (!empty($name))           {$query .= " and Name like '%$name%'";}
 
     $_SESSION['query']=$query;
     //checking the database for existing users

@@ -70,35 +70,49 @@ if (isset($_GET['logout'])) {
                 <form action="home.php" method="post">
                     <div class="row">
                         <!-- Store Search -->
-                        <div class="col-lg-2 col-md-6">
+                        <div class="col-lg-2 col-md-4">
+                            <div class="block d-flex">
+                                <input style="color: aliceblue; border: 1px solid #ccc;" type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" name="name" id="search" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4">
                             <div class="block d-flex">
                                 <input style="color: aliceblue; border: 1px solid #ccc;" type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" name="university" id="search" placeholder="University">
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-6">
+                        <div class="col-lg-2 col-md-4">
                             <div class="block d-flex">
                                 <input  style="color: aliceblue;border: 1px solid #ccc; " type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" name="batch" id="search" placeholder="University Batch">
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-6">
+                        <div class="col-lg-2 col-md-4">
                             <div class="block d-flex">
                                 <input  style="color: aliceblue;border: 1px solid #ccc " type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" name="batch_royal" id="search" placeholder="Batch Of Royal">
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-6">
+                        <div class="col-lg-2 col-md-4">
                             <div class="block d-flex">
                                 <input  style="color: aliceblue;border: 1px solid #ccc;" type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" name="field" id="search" placeholder="Field">
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-6">
+                        <div class="col-lg-2 col-md-4">
                             <div class="block d-flex">
                                 <input  style="color: aliceblue;border: 1px solid #ccc;" type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" name="company" id="search" placeholder="Company">
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-6">
+
+                    </div>
+                    <div class="row" style="padding-top: 12px">
+                        <div  class="col-lg-5 col-md-6">    
+                        </div>
+                        <div style="padding-right:10px" class="col-lg-1 col-md-6" >
+                            <div  class="block d-flex">
+                                <input  type="submit" name="search" class="btn btn-main" value="Search"></input>
+                            </div>
+                        </div>
+                        <div  class="col-lg-2 col-md-6">
                             <div class="block d-flex">
-                                <input type="submit" name="search" class="btn btn-main" value="Search"></input>
-                                <button onclick="javascript:PdfFromHTML()">PDF</button>
+                                <input type="submit" onclick="javascript:PdfFromHTML()" value="Download PDF "></input>
                             </div>
                         </div>
                     </div>
