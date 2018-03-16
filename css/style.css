@@ -10,9 +10,29 @@
 */
 
 /* Basic */
+.custab{
+	border: 1px solid #ccc;
+	padding: 5px;
+	margin: 5% 0;
+	box-shadow: 3px 3px 0px transparent;
+	transition: 0.5s;
+}
 
+.hero-area .advance-search {
+	background: #fff;
+	padding: 40px 30px;
+	border-radius: 3px;
+	margin-bottom: -50px;
+	box-shadow: -1px 3px 6px rgba(0, 0, 0, 0.12);
+}
+
+.d-flex {
+	display: -ms-flexbox!important;
+	display: flex!important;
+}
 	body {
-		background: #fff;
+		background: grey;
+		background-size: cover;
 	}
 
 	body, input, select, textarea {
@@ -221,7 +241,7 @@
 		border-radius: 4px;
 		border: none;
 		border: solid 1px rgba(144, 144, 144, 0.25);
-		color: inherit;
+		color: black;
 		display: block;
 		outline: 0;
 		padding: 0 1em;
@@ -962,7 +982,8 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		color: #ffffff;
+		color: grey;
+		min-height: calc(100vh - 46px);
 		padding: 4em 0em 4em;
 		text-align: center;
 	}
@@ -977,7 +998,7 @@
 
 		#banner p {
 			font-size: 1.5em;
-			margin: 1.5em 0 0 0;
+			margin: 1.5em 0 1.5em 0;
 		}
 
 		#banner .actions {
@@ -1090,3 +1111,4 @@
 					margin-left: 0;
 					padding-left: 0;
 				}
+
