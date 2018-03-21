@@ -103,7 +103,7 @@ if (isset($_GET['logout'])) {
 
                     </div>
                     <div class="row" style="padding-top: 12px">
-                        <div  class="col-lg-5 col-md-6">    
+                        <div  class="col-lg-5 col-md-6">
                         </div>
                         <div style="padding-right:10px" class="col-lg-1 col-md-6" >
                             <div  class="block d-flex">
